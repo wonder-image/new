@@ -10,4 +10,4 @@
   composer update wonder-image/app
 ```
 
-### 3° Modifica file .env
+### 3° Personalizza file .env
