@@ -12,6 +12,9 @@
  - Certificato SSL
  - Redirect HTTPS
  - Versione PHP >8.0
+ - PHP Extensions
+   - imagick: `true`
+   - nd_mysqli: `true`
  - PHP Options
    - display_errors: `true`
    - post_max_size: `512M`
@@ -31,9 +34,13 @@
 
 
 ### 1° Installa template
+
+Crea una cartella con il `nome azienda` aprila con VSCode, successivamente vai su `nuovo terminale` e esegui il seguente comando:
+
 ```bash
   gh repo clone wonder-image/new
 ```
+Estrapola i file dalla cartella `new` e elimina il file `README.md`. Rinomina la cartella `site_name` con il nome del dominio e compila il file `INFO.md`. 
 
 
 ### 2° Aggiorna APP
