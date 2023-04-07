@@ -1,5 +1,13 @@
 # TEMPLATE SITO
 
-1° Run
-  $ gh repo clone wonder-image/new
+### 1° Installa template
+```bash
+  gh repo clone wonder-image/new
+```
 
+### 2° Aggiorna APP
+```bash
+  composer update wonder-image/app
+```
+
+### 3° Modifica file .env
