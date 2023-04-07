@@ -1,4 +1,20 @@
-# TEMPLATE SITO
+# CONFIGURAZIONE
+
+## AMBIENTE
+
+### 1° Crea account CPanel
+
+### 2° Effettua check
+ - Certificato SSL
+ - Redirect HTTPS
+ - Versione PHP >8.0
+ 
+### 3° Crea
+ - Account FTP
+ - Database
+ - Account database
+
+## APP
 
 ### 1° Installa template
 ```bash
@@ -23,3 +39,6 @@ Specificare credenziali accesso: `USER_NAME` `USER_SURNAME` `USER_EMAIL` `USER_U
 
 ### 5° Personalizza
 Digita sulla barra di ricerca nomedominio.it/backend/
+
+Username: `USER_USERNAME`
+Password: `USER_PASSWORD`
