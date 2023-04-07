@@ -1,5 +1,5 @@
 {
     "require": {
-        "wonder-image/app": "1.0.2"
+        "wonder-image/app": "dev-main"
     }
 }
