@@ -12,12 +12,18 @@
  - Certificato SSL
  - Redirect HTTPS
  - Versione PHP >8.0
+ - PHP Options
+   - display_errors: `true`
+   - post_max_size: `512M`
+   - short_open_tag: `true`
+   - upload_max_filesize: `1G`
  
  
 ### 3° Crea
  - Account FTP
  - Database
  - Account database
+ - Aggiungi utente a database
 
 
 
