@@ -8,7 +8,7 @@ Server: ftp.wonder-demo.it
 Porta: 21
 Directory: /public
 Username: wonder@wonder-demo.it
-Password: qP7fyHDL-x@O
+Password: TMOqiJ3znu[M
 
 DATABASE
 Hostname: 80.88.87.245

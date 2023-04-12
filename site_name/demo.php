@@ -18,10 +18,10 @@
 <body>
 
     <?php include $ROOT_APP.'/utility/frontend/body-start.php' ?>
-    <?php include $ROOT.'/custom/utility/header.php' ?>
+    <?php include $ROOT.'/custom/utility/frontend/header.php' ?>
 
     
-    <?php include $ROOT.'/custom/utility/footer.php' ?>
+    <?php include $ROOT.'/custom/utility/frontend/footer.php' ?>
     <?php include $ROOT_APP.'/utility/frontend/body-end.php' ?>
     
 </body>
