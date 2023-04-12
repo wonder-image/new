@@ -10,6 +10,7 @@
 
 ### 2° Effettua check
  - Certificato SSL
+ - SSL Status
  - Redirect HTTPS
  - Versione PHP >8.0
  - PHP Extensions
