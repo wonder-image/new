@@ -12,7 +12,7 @@
  - Certificato SSL
  - SSL Status
  - Redirect HTTPS
- - Versione PHP >8.0
+ - Versione PHP 8.0
  - PHP Extensions
    - imagick: `true`
    - nd_mysqli: `true`
