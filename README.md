@@ -15,7 +15,8 @@
  - Versione PHP 8.0
  - PHP Extensions
    - imagick: `true`
-   - nd_mysqli: `true`
+   - geoip: `true`
+   - mysqli: `true`
  - PHP Options
    - display_errors: `true`
    - memory_limit: `2048M`
