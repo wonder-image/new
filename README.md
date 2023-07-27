@@ -12,12 +12,14 @@
  - Certificato SSL
  - SSL Status
  - Redirect HTTPS
- - Versione PHP >8.0
+ - Versione PHP 8.0
  - PHP Extensions
    - imagick: `true`
-   - nd_mysqli: `true`
+   - geoip: `true`
+   - mysqli: `true`
  - PHP Options
    - display_errors: `true`
+   - memory_limit: `2048M`
    - post_max_size: `512M`
    - short_open_tag: `true`
    - upload_max_filesize: `1G`
