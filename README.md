@@ -27,7 +27,7 @@
  
 ### 3° Crea
  - Account FTP
- - Database
+ - Database `_main` `_stats`
  - Account database
  - Aggiungi utente a database
 
@@ -75,3 +75,11 @@ Digita sulla barra di ricerca nomedominio.it/backend/
 Username: `USER_USERNAME`
 
 Password: `USER_PASSWORD`
+
+### 7° CronJob
+Crea i seguenti cronjob:
+ - Creazione sitemap `/api/task/sitemap.php`
+ - Statistiche orarie `/api/task/stats/hourly.php`
+ - Statistiche giornaliere `/api/task/stats/daily.php`
+ - Statistiche mensili `/api/task/stats/monthly.php`
+
