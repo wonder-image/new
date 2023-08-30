@@ -78,8 +78,20 @@ Password: `USER_PASSWORD`
 
 ### 7° CronJob
 Crea i seguenti cronjob:
- - Creazione sitemap `/api/task/sitemap.php`
- - Statistiche orarie `/api/task/stats/hourly.php`
- - Statistiche giornaliere `/api/task/stats/daily.php`
- - Statistiche mensili `/api/task/stats/monthly.php`
+ - Creazione sitemap
+   ```bash
+   /api/task/sitemap.php
+   ```
+ - Statistiche orarie 
+   ```bash
+   /api/task/stats/hourly.php
+   ```
+ - Statistiche giornaliere 
+   ```bash
+   /api/task/stats/daily.php
+   ```
+ - Statistiche mensili 
+   ```bash
+   /api/task/stats/monthly.php
+   ```
 
