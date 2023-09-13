@@ -38,9 +38,6 @@ ErrorDocument 500 /error/?err=500
     ExpiresByType text/plain A0
 </IfModule>
 
-# Disable index view
-Options - Indexes
-
 # HIDE FILE .env
 <IfModule>
     <Files .env>
