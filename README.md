@@ -62,7 +62,7 @@ Specificare credenziali accesso: `USER_NAME` `USER_SURNAME` `USER_EMAIL` `USER_U
 
 
 ### 4° Personalizza sftp.json
-Inserisci tutte le informazioni per accedere all'hosting
+Inserisci le credenziali FTP per accedere al file manager
 
 
 ### 5° Installa/Aggiorna APP
