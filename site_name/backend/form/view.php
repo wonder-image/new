@@ -50,7 +50,8 @@
                         <h6>DATI</h6>
                         <div class="w-100 mt-2">
                             Nome: <b><?=$FORM->name?> <?=$FORM->surname?></b> <br>
-                            Email: <b><?=$FORM->email?></b>
+                            Cellulare: <b><?=empty($FORM->phone) ? '--' : prettyPhone($FORM->phone)?></b> <br>
+                            Email: <b><?=empty($FORM->email) ? '--' : $FORM->email?></b>
                         </div>
                     </div>
                     <div class="col-6">
@@ -72,7 +73,7 @@
                         <h6>DETTAGLI</h6>
                         <div class="w-100 mt-2">
                             Creazione: <b><?=$FORM->prettyCreation?></b> <br>
-                            Privacy: <b><?=$FORM->privacy?></b>
+                            Privacy: <b><?=json_decode($FORM->privacy, true)[0]?></b>
                         </div>
                     </div>
                 </wi-card>

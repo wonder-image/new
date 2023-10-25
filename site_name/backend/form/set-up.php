@@ -42,6 +42,11 @@
             "value" => ['name', 'surname'],
             "href" => "view"
         ],
+        "phone" => [
+            "label" => "Telefono",
+            "href" => "tel",
+            "tablet" => false
+        ],
         "email" => [
             "label" => "Email",
             "href" => "mailto",
@@ -49,6 +54,6 @@
         ]
     ];
 
-    $FILTER_SEARCH = ['name', 'email'];
+    $FILTER_SEARCH = ['name', 'phone', 'email'];
 
 ?>

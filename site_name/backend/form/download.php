@@ -10,7 +10,7 @@
     require_once "set-up.php";
 
     $FILE_NAME = "Form-".date('Y-m-d-H-i');
-    $ARRAY = [["Nome", "Cognome", "Email", "Iscrizione"]];
+    $ARRAY = [["Nome", "Cognome", "Telefono", "Email", "Iscrizione"]];
 
     $SQL = sqlSelect('rsvp', ['deleted' => 'false']);
 
@@ -23,6 +23,7 @@
         array_push($ARRAY, [
             $FORM->name,
             $FORM->surname,
+            prettyPhone($FORM->phone),
             $FORM->email,
             $FORM->creation
         ]);
