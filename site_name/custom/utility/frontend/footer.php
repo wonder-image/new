@@ -7,7 +7,7 @@
             </div>
 
             <div class="col-2 col-p-1">
-                <form class="w-100 d-grid col-2 gap-5">
+                <form class="w-100 d-grid col-2 gap-5 gap-p-3 r-gap-p-5">
                     <div class="col-2">
                         <div class="subtitle a-c">
                             Hai bisogno di maggiori informazioni?
@@ -19,7 +19,7 @@
                     <?=text('Nome', 'name', '', 'required')?>
                     <?=text('Cognome', 'surname', '', 'required')?>
                     <div class="col-2">
-                        <?=number('Cellulare', 'phone', '', 'required')?>
+                        <?=phone('Cellulare', 'phone', '', 'required')?>
                     </div>
                     <div class="col-2">
                         <?=text('Email', 'email', '', 'required')?>
