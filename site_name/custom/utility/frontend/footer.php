@@ -31,7 +31,7 @@
                         <?=checkbox('', 'privacy', ["true" => ["label" => "Accetto la <a href='$PATH->site/legal/privacy-policy/' target='_blank' rel='noopener noreferrer'>Politica sulla privacy</a> e i <a href='$PATH->site/legal/terms-conditions/' target='_blank' rel='noopener noreferrer'>Termini e Condizioni</a>", "attribute" => "required"]], 'checkbox', '');?>
                     </div>
                     <div class="col-2">
-                        <?=submit('INVIA MODULO', 'send', 'btn-primary f-end', "sendForm(this, '$PATH->api/frontend/form.php')")?>
+                        <?=submit('INVIA MODULO', 'send', 'btn-primary f-end', "formUpload(this.form, '$PATH->api/frontend/form.php')")?>
                     </div>
                 </form>
             </div>
