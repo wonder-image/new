@@ -11,7 +11,6 @@
         "php": "^8.2",
         "wonder-image/app": "1.4.0"
     },
-    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Custom\\": "custom/class/"
