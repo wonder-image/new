@@ -1,12 +1,13 @@
 <header class="bg-primary">
     <div class="content">
 
-        <img src="<?=$PATH->logoIcon?>" alt="Icon <?=$SOCIETY->name?>" class="h-100">
+        <a href="<?=$PATH->site?>" class="p-r f-start h-80 c-h">
+            <img src="<?=$PATH->logoWhite?>" alt="Logo <?=$SOCIETY->name?>" class="h-100">
+        </a>
 
         <div class="nav-list tx-white phone-none pl-4">
             <a href="<?=$PATH->site?>" class="nav">Home</a>
         </div>
-
 
         <div id="hamburger" class="c-h f-end pc-none" onclick="menuMobile()">
             <div class="bar bar-1 bg-white"></div>
