@@ -43,30 +43,47 @@
 <footer class="mh-12">
     <div class="content">
         <div class="w-100 d-grid col-3 col-p-1 gap-12">
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <div class="text">INDIRIZZO</div>
-                <div class="subtitle mt-1">
-                    <a href="<?=$SOCIETY->gmaps?>" target="_blank" rel="noopener noreferrer">
-                        <?=$SOCIETY->prettyAddress?>
-                    </a>
+
+            <div>
+                <img src="<?=$PATH->logoWhite?>" alt="Logo <?=$SOCIETY->name?>" class="p-r f-start w-80">
+                <div class="text w-100 mt-6">
+                    <b><?=$SOCIETY->legal_name?></b> <br>
+                    P.Iva: <a class="tx-none"><b><?=$SOCIETY->pi?></b></a> <br>
+                    C.Fiscale: <a class="tx-none"><b><?=$SOCIETY->cf?></b></a> <br>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <div class="text">CONTATTI</div>
-                <div class="subtitle mt-1">
-                    Cel. <a href="tel:<?=$SOCIETY->cel?>"><?=prettyPhone($SOCIETY->cel)?></a>
+
+            <div>
+                <div class="w-100">
+                    <div class="subtitle">INDIRIZZO</div>
+                    <div class="text mt-1">
+                        <a href="<?=$SOCIETY->gmaps?>" target="_blank" rel="noopener noreferrer" class="tx-none">
+                            <?=$SOCIETY->prettyAddress?>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <div class="text">ORARI</div>
-                <div class="subtitle mt-1">
-                    <?=$SOCIETY->prettyTimeGroup?>
+
+            <div>
+                <div class="w-100">
+                    <div class="subtitle">CONTATTI</div>
+                    <div class="text mt-1">
+                        Cel. <a href="tel:<?=$SOCIETY->cel?>" class="tx-none"><?=prettyPhone($SOCIETY->cel)?></a> <br>
+                        Mail. <a href="maiilto:<?=$SOCIETY->email?>" class="tx-none"><?=$SOCIETY->email?></a>
+                    </div>
                 </div>
+            </div>
+
+        </div>
+
+        <div class="text w-100 mt-10">
+            <div class="w-50">
+                <a href="<?=$PATH->site?>/legal/privacy-policy/" class="tx-none">Privacy Policy</a> - <a href="<?=$PATH->site?>/legal/cookie-policy/" class="tx-none">Cookie Policy</a> - <a href="<?=$PATH->site?>/legal/terms-conditions/" class="tx-none">Termini e Condizioni</a>
+            </div>
+            <div class="w-50 a-r">
+                Credit By <a href="https://www.wonderimage.it/" target="_blank" rel="noopener noreferrer">Wonder Image</a>
             </div>
         </div>
-        <div class="text w-100 mt-12 a-c">
-            <?=$SOCIETY->prettyLegal?> <br>
-            Credit By <a href="https://www.wonderimage.it/" target="_blank" rel="noopener noreferrer">Wonder Image</a>
-        </div>
+
     </div>
 </footer>
