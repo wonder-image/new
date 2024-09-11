@@ -9,7 +9,7 @@
             <a href="<?=$PATH->site?>" class="nav">Home</a>
         </div>
 
-        <div id="hamburger" class="c-h f-end pc-none" onclick="menuMobile()">
+        <div id="hamburger" class="c-h f-end pc-none tablet-none" onclick="menuMobile()">
             <div class="bar bar-1 bg-white"></div>
             <div class="bar bar-2 bg-white"></div>
             <div class="bar bar-3 bg-white"></div>
