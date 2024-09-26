@@ -11,13 +11,12 @@
 
     $SEO->title = "Termini e Condizioni";
     $SEO->description = "Termini e Condizioni di ".$LEGAL->domain;
+    $SEO->url = "$PATH->site/legal/terms-conditions/";
 
 ?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
-
-    <link rel="canonical" href="<?=$PATH->site?>/legal/terms-conditions/">
 
     <?php include $ROOT_APP.'/utility/frontend/head.php'; ?>
 

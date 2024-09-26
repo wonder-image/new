@@ -11,13 +11,12 @@
 
     $SEO->title = "Cookie Policy";
     $SEO->description = "Cookie Policy di ".$LEGAL->domain;
+    $SEO->url = "$PATH->site/legal/cookie-policy/";
 
 ?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    
-    <link rel="canonical" href="<?=$PATH->site?>/legal/cookie-policy/">
 
     <?php include $ROOT_APP.'/utility/frontend/head.php'; ?>
 

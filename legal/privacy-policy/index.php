@@ -11,13 +11,12 @@
 
     $SEO->title = "Informativa sulla privacy";
     $SEO->description = "Informativa sulla privacy di ".$LEGAL->domain;
+    $SEO->url = "$PATH->site/legal/privacy-policy/";
 
 ?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
-
-    <link rel="canonical" href="<?=$PATH->site?>/legal/privacy-policy/">
 
     <?php include $ROOT_APP.'/utility/frontend/head.php'; ?>
 
