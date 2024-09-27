@@ -40,8 +40,8 @@
     </div>
 </section>
 
-<footer class="mh-12">
-    <div class="content">
+<footer>
+    <div class="content mh-10 mh-p-0">
         <div class="w-100 d-grid col-3 col-p-1 gap-12">
 
             <div>
@@ -77,10 +77,10 @@
         </div>
 
         <div class="text w-100 mt-10">
-            <div class="w-50">
+            <div class="w-50 w-p-100">
                 <a href="<?=$PATH->site?>/legal/privacy-policy/" class="tx-none">Privacy Policy</a> - <a href="<?=$PATH->site?>/legal/cookie-policy/" class="tx-none">Cookie Policy</a> - <a href="<?=$PATH->site?>/legal/terms-conditions/" class="tx-none">Termini e Condizioni</a>
             </div>
-            <div class="w-50 a-r">
+            <div class="w-50 a-r w-p-100 mt-p-10">
                 Credit By <a href="https://www.wonderimage.it/" target="_blank" rel="noopener noreferrer">Wonder Image</a>
             </div>
         </div>
