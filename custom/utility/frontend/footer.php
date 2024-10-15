@@ -3,7 +3,7 @@
         <div class="d-grid col-5 col-p-1 gap-5 w-100">
 
             <div class="col-3 col-p-1 b-r-5 f-p-3-2 o-hidden">
-                <iframe class="bg bg-cover" title="Google Maps" src="https://www.google.com/maps/embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="bg bg-cover skeleton" title="Google Maps" src="https://www.google.com/maps/embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="col-2 col-p-1">
