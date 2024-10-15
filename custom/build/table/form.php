@@ -17,13 +17,12 @@
                 ]
             ]
         ],
+        "phone" => [],
         "email" => [],
         "request" => [
             "sql" => [ 
-                "lenght" => 10000 
+                "length" => 10000 
             ]
         ],
         "privacy" => []
     ];
-
-?>
