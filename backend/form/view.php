@@ -73,7 +73,8 @@
                         <h6>DETTAGLI</h6>
                         <div class="w-100 mt-2">
                             Creazione: <b><?=$FORM->prettyCreation?></b> <br>
-                            Privacy: <b><?=json_decode($FORM->privacy, true)[0]?></b>
+                            Privacy: <b><?=json_decode($FORM->privacy, true)[0]?></b> <br>
+                            URL Richiesta: <br> <a href="<?=$FORM->request_url?>"><?=$FORM->request_url?></a>
                         </div>
                     </div>
                 </wi-card>

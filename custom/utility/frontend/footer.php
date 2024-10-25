@@ -8,6 +8,7 @@
 
             <div class="col-2 col-p-1">
                 <form class="w-100 d-grid col-2 gap-5 gap-p-3 r-gap-p-5">
+                    <input type="hidden" name="request_url" value="<?=$PAGE->url?>">
                     <div class="col-2">
                         <div class="subtitle a-c">
                             Hai bisogno di maggiori informazioni?

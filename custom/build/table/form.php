@@ -18,8 +18,19 @@
             ]
         ],
         "phone" => [],
-        "email" => [],
+        "email" => [
+            "input" => [
+                "format" => [
+                    "lower" => true
+                ]
+            ]
+        ],
         "request" => [
+            "sql" => [ 
+                "length" => 10000 
+            ]
+        ],
+        "request_url" => [
             "sql" => [ 
                 "length" => 10000 
             ]
