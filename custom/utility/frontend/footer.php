@@ -1,20 +1,29 @@
-<section id="contact-form">
-    <div class="content mh-12">
-        <div class="d-grid col-5 col-p-1 gap-5 w-100">
+<?php 
 
-            <div class="col-3 col-p-1 b-r-5 f-p-3-2 o-hidden">
-                <iframe class="bg bg-cover skeleton" title="Google Maps" src="https://www.google.com/maps/embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    if (!isset($FOOTER_CONTACT) || (isset($FOOTER_CONTACT) && $FOOTER_CONTACT == true)) : 
+    
+        $FOOTER_CONTACT_MAP = !isset($FOOTER_CONTACT_MAP) || (isset($FOOTER_CONTACT_MAP) && $FOOTER_CONTACT_MAP == true) ? true : false;
+
+?>
+<section id="contact-form">
+    <div class="content mh-12 <?=!$FOOTER_CONTACT_MAP ? 'content-little' : ''?>">
+        <div class="d-grid <?=!$FOOTER_CONTACT_MAP ? 'col-2' : 'col-5'?> col-p-1 gap-5 w-100">
+
+            <?php if ($FOOTER_CONTACT_MAP) : ?>
+                <div class="col-3 col-p-1 b-r-5 f-p-3-2 o-hidden">
+                    <iframe class="bg bg-cover skeleton" title="Google Maps" src="https://www.google.com/maps/embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <?php endif; ?>
 
             <div class="col-2 col-p-1">
                 <form class="w-100 d-grid col-2 gap-5 gap-p-3 r-gap-p-5">
                     <input type="hidden" name="request_url" value="<?=$PAGE->url?>">
                     <div class="col-2">
                         <div class="subtitle a-c">
-                            Hai bisogno di maggiori informazioni?
+                            <?=$FOOTER_CONTACT_TITLE ?? "Hai bisogno di maggiori informazioni?"?>
                         </div>
                         <div class="text mt-3 a-c">
-                            Compila il form
+                            <?=$FOOTER_CONTACT_SUBTITLE ?? "Compila il form"?>
                         </div>
                     </div>
                     <?=text('Nome', 'name', '', 'required')?>
@@ -40,6 +49,7 @@
 
     </div>
 </section>
+<?php endif; ?>
 
 <footer>
     <div class="content mh-10 mh-p-0">
