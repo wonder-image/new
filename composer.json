@@ -9,7 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "wonder-image/app": "1.4.2"
+        "wonder-image/app": "1.4.3"
     },
     "autoload": {
         "psr-4": {
