@@ -38,18 +38,27 @@
         # Invio l'email
             if (isset($VALUES['email']) && !empty($VALUES['email'])) {
 
-                $BODY_SOCIETY = "Ecco i dettagli:<br>";
-                $BODY_SOCIETY .= "Nome: <b>{$VALUES['name']} {$VALUES['surname']}</b><br>";
-                $BODY_SOCIETY .= "Email: <b>{$VALUES['email']}</b><br>";
-                $BODY_SOCIETY .= "Cellulare: <b>{$VALUES['phone']}</b><br>";
-                $BODY_SOCIETY .= "Dettagli: <br>{$VALUES['request']}";
-                $BODY_SOCIETY .= "<br><br><br><a href='$PATH->backend/form/view.php?id=$REQUEST_ID'>Clicca qui</a> per vedere la richiesta.";
-                $BODY_SOCIETY .= "<br><br><br>Link invio richiesta:<br><a href='{$VALUES['request_url']}'>{$VALUES['request_url']}</a>.";
-                
-                $BODY_CLIENT = "Buongiorno {$VALUES['name']}<br>La tua richiesta a $SOCIETY->name è stata inviata correttamente!";
+                if (!isset($_POST['email_society']) || (isset($_POST['email_society']) && $_POST['email_society'] == 'true')) {
+                    
+                    $BODY_SOCIETY = "Ecco i dettagli:<br>";
+                    $BODY_SOCIETY .= "Nome: <b>{$VALUES['name']} {$VALUES['surname']}</b><br>";
+                    $BODY_SOCIETY .= isset($VALUES['date_of_birth']) ? "Data di Nascita: <b>{$VALUES['date_of_birth']}</b><br>" : "";
+                    $BODY_SOCIETY .= isset($VALUES['email']) ? "Email: <b>{$VALUES['email']}</b><br>" : "";
+                    $BODY_SOCIETY .= isset($VALUES['phone']) ? "Cellulare: <b>{$VALUES['phone']}</b><br>" : "";
+                    $BODY_SOCIETY .= isset($VALUES['request']) ? "Dettagli: <br>{$VALUES['request']}" : "";
+                    $BODY_SOCIETY .= "<br><br><br><a href='$PATH->backend/form/view.php?id=$REQUEST_ID'>Clicca qui</a> per vedere la richiesta.";
+                    $BODY_SOCIETY .= "<br><br><br>Link invio richiesta:<br><a href='{$VALUES['request_url']}'>{$VALUES['request_url']}</a>.";
+                    
+                    sendMail($SOCIETY->email, $SOCIETY->email, "Nuovo contatto dal sito", $BODY_SOCIETY, $ATTACHMENT);
 
-                sendMail($SOCIETY->email, $SOCIETY->email, "Nuovo contatto dal sito", $BODY_SOCIETY, $ATTACHMENT);
-                sendMail($SOCIETY->email, $VALUES['email'], "Richiesta inviata", $BODY_CLIENT);
+                }
+
+                if (!isset($_POST['email_client']) || (isset($POST['email_client']) && $_POST['email_client'] == 'true')) {
+
+                    $BODY_CLIENT = "Buongiorno {$VALUES['name']}<br>La tua richiesta a $SOCIETY->name è stata inviata correttamente!";
+                    sendMail($SOCIETY->email, $VALUES['email'], "Richiesta inviata", $BODY_CLIENT);
+
+                }
 
             }
         
